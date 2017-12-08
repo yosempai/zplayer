@@ -1,0 +1,107 @@
+body {
+	padding:0;
+	margin:0;
+}
+
+div.ytapivideoplayer {
+	text-align:left;
+	float:right;
+	font-size:95%;
+	width:33%;
+	height:0;
+	padding-bottom: 37%;
+	background-color:#555555;
+	overflow:auto;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+div.ytapivideoplayer.left {
+	float:left;
+}
+
+div.ytapivideoplayer.stacked {
+	float:none;
+	width:100%;
+}
+
+div.ytapivideoplayer .ytactive:hover {
+	background-color:#ffffff;
+
+}
+div.ytapivideoplayer .ytactive {
+	background-color:#99ccff;
+	padding:5px;
+}
+div.ytapivideoplayer .ytbutton:hover {
+	background-color:#989898;
+
+}
+div.ytapivideoplayer .ytbutton {
+	background-color:#555555;
+	padding:5px;
+}
+div.ytapivideoplayer .ytbutton a {
+	color:#ffffff !important;
+}
+div.ytapivideoplayer .ytactive a {
+	color:#000000 !important;
+}
+
+/*remove blank space after last video button. not sure how this works lol */
+.ytbutton.last {
+	margin-bottom:-200% !important;
+}
+
+.responsiveVideoWrapper {
+	position: relative;
+	padding-bottom: 37%;
+	height: 0;
+	width:66%;
+	float:left;
+}
+
+.responsiveVideoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.responsiveVideoWrapper.left {
+	float:right;
+}
+
+.responsiveVideoWrapper.stacked {
+	width:100%;
+	float:none;
+}
+
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #ccc url('/images/loading.gif') no-repeat center center; }
+
+/*@media screen and (max-width: 768px) {
+	div.ytapivideoplayer.left {
+		text-align:left;
+		float:none;
+		font-size:115%;
+		width:100%;
+		max-height: intrinsic;
+		background-color: #555555;
+		overflow:auto;
+	}
+
+	div.ytapivideoplayer {
+		text-align:left;
+		float:none;
+		font-size:115%;
+		width:100%;
+		height:0;
+		padding-bottom: 56.25%;
+		background-color:#555555;
+		overflow:auto;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	.responsiveVideoWrapper {
+		width:100%;
+	}
+}*/
