@@ -1,3 +1,6 @@
+//get API key from config.js file
+var apiKey = config.APOD_KEY;
+
 //get the titles of videos in playlist from youtube API
 var playlistID = php_vars.playlist_id;
 var youtubeAPIURL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId="+playlistID+"&key="+apiKey;
